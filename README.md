@@ -1,38 +1,123 @@
 # Videolyser Image Compressor
 
-Free image compression tool by Videolyser for faster websites, thumbnails and web-ready assets.
+![Videolyser Image Compressor Screenshot](assets/screenshot.png)
+
+A simple desktop image compression and conversion tool for faster websites, thumbnails and web-ready assets.
 
 ## Overview
 
-Videolyser Image Compressor is a simple tool for reducing image file sizes quickly and efficiently. It is designed for creators, website owners, bloggers and anyone who wants lighter images for faster loading times and better web performance.
+Videolyser Image Compressor is a lightweight Python desktop app that helps you compress, resize and convert images quickly.
+
+It is designed for creators, bloggers, website owners and anyone who wants to prepare images for the web with smaller file sizes and a simple workflow.
 
 ## Features
 
 - Compress images for web use
-- Useful for blog images, thumbnails and website assets
-- Simple and practical workflow
-- Lightweight and easy to use
+- Convert images to WEBP, JPEG or PNG
+- Resize images by maximum width
+- Adjust compression quality
+- Supports JPG, JPEG, PNG, WEBP, BMP, TIF and TIFF as input formats
+- Automatically saves processed images to the `output` folder
+- Automatically moves original files to the `processed` folder
+- Simple desktop interface built with CustomTkinter
 
-## Why this tool exists
+## Supported Formats
 
-Large image files slow down websites, hurt user experience and can make content workflows more annoying than necessary. This tool was created to make image compression easier and more accessible.
+### Input
+- JPG
+- JPEG
+- PNG
+- WEBP
+- BMP
+- TIF
+- TIFF
 
-## Use cases
+### Output
+- WEBP
+- JPEG
+- PNG
 
-- Optimize blog images
-- Prepare YouTube thumbnails
-- Reduce image size before upload
-- Improve website performance
+## How It Works
+
+1. Place your image files into the app folder
+2. Start the app
+3. Set your maximum width
+4. Choose the output format
+5. Adjust quality
+6. Click **PROCESS ALL IMAGES**
+
+Processed files will be saved in the `output` folder.  
+Original files will be moved to the `processed` folder.
+
+## Use Cases
+
+- Compress blog images for faster websites
+- Convert large image files into web-friendly formats
+- Prepare thumbnails for YouTube or social media
+- Resize images before uploading them to a website
+- Create smaller assets for better loading performance
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Videolyser/videolyser-image-compressor.git
+cd videolyser-image-compressor
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the app
+
+```bash
+python app.py
+```
+
+## Requirements
+
+- Python 3.10 or newer
+- customtkinter
+- Pillow
+
+## Project Structure
+
+```text
+videolyser-image-compressor/
+├── app.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+├── output/
+│   └── .gitkeep
+└── processed/
+    └── .gitkeep
+```
+
+## Notes
+
+- The app processes supported image files located in the same folder as `app.py`
+- Processed files are written to the `output` folder
+- Original image files are moved to the `processed` folder after processing
+- The website button in the app opens `https://www.videolyser.de/`
 
 ## Roadmap
 
-- Better compression presets
-- More export options
-- Improved interface
-- Additional image format support
+Planned future improvements may include:
+
+- Drag and drop support
+- Folder picker
+- Compression presets
+- Keep originals option
+- Better preview workflow
 
 ## About Videolyser
 
-Videolyser builds tools, components and solutions for video, streaming, creators and web publishing.
+Videolyser builds tools, components and practical solutions for video, streaming, creators and web publishing.
 
-Website: https://www.videolyser.de
+Website: https://www.videolyser.de/
